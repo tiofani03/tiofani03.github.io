@@ -107,15 +107,17 @@ var PageTransitions = (function ($, options) {
 				ajaxLoadedContent.hide();
 			}, 500);
 		}
-		var href = $(".ajax-page-load").each(function () {
-			href = $(this).attr("href");
-			if (
-				location.hash ==
-				location.hash.split("/")[0] + "/" + href.substr(0, href.length - 5)
-			) {
-				var toLoad = $(this).attr("href");
+		// Load ajax page if location.hash matches an ajax-page-load link.
+		// Guard against missing/invalid href to prevent runtime errors.
+		$(".ajax-page-load").each(function () {
+			var href = $(this).attr("href");
+			if (!href || href.length <= 5) return;
+
+			var baseHash = location.hash.split("/")[0];
+			var hashFromHref = href.substr(0, href.length - 5); // strip ".html"
+			if (location.hash === baseHash + "/" + hashFromHref) {
 				showContent();
-				ajaxLoadedContent.load(toLoad);
+				ajaxLoadedContent.load(href);
 				return false;
 			}
 		});
@@ -126,12 +128,12 @@ var PageTransitions = (function ($, options) {
 				location.hash = location.hash.split("/")[0];
 			})
 			.on("click", ".ajax-page-load", function () {
+				var href = $(this).attr("href");
+				if (!href || href.length <= 5) return false;
 				var hash =
 					location.hash.split("/")[0] +
 					"/" +
-					$(this)
-						.attr("href")
-						.substr(0, $(this).attr("href").length - 5);
+					href.substr(0, href.length - 5); // strip ".html"
 				location.hash = hash;
 				showContent();
 				return false;
