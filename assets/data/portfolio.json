@@ -444,11 +444,29 @@
       "description": "Developed and maintained the Moladin Android ecosystem. Shipped MD Referral, Car Wishlist, Soundingan, Refinancing, Onboarding, Finance Dashboard, and AFA Calculator features."
     },
     {
+      "period": "2022 — 2022",
+      "role": "Android Developer [Freelance]",
+      "company": "PT Solutech Inovasi Teknologi",
+      "description": "Developed and maintained bespoke Android applications for various clients."
+    },
+    {
       "period": "2021 — 2022",
       "role": "Android Developer",
       "company": "PT Lekasehat Indonesia",
       "description": "Built and maintained patient, doctor, and pharmacy apps. Implemented teleconsultation for Covid & Malaria, referral programs, voucher systems, and prescription scanning."
     },
+    {
+      "period": "2019 — 2020",
+      "role": "Android Developer",
+      "company": "CV Java Multi Mandiri Purwokerto",
+      "description": "Developed sales and quotation applications for Android devices."
+    },
+    {
+      "period": "2018 — 2019",
+      "role": "Lab Assistant & Assistant Professor",
+      "company": "University",
+      "description": "Lab assistant across Informatics Engineering, Software Engineering, and Information Systems for Databases, Object-Oriented Programming, and Programming Algorithms."
+    }
   ],
   "principles": [
     {
