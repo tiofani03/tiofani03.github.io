@@ -270,21 +270,65 @@
 
   const setupFilters = () => {
     const filterButtons = document.querySelectorAll("[data-filter]");
-    const projectCards = document.querySelectorAll("[data-category]");
+    const projectCards = Array.from(document.querySelectorAll("[data-category]"));
+    const showAllBtn = document.querySelector("[data-show-all]");
+    let currentFilter = "all";
+    let isShowAll = false;
+    const initialLimit = 6;
+
+    const applyFilters = () => {
+      let visibleCount = 0;
+      let totalMatches = 0;
+
+      projectCards.forEach((card) => {
+        const matchesFilter =
+          currentFilter === "all" || card.dataset.category === currentFilter;
+
+        if (matchesFilter) {
+          totalMatches++;
+          if (isShowAll || visibleCount < initialLimit) {
+            card.classList.remove("is-hidden");
+            visibleCount++;
+          } else {
+            card.classList.add("is-hidden");
+          }
+        } else {
+          card.classList.add("is-hidden");
+        }
+      });
+
+      if (showAllBtn) {
+        if (totalMatches > initialLimit && !isShowAll) {
+          showAllBtn.style.display = "inline-flex";
+        } else {
+          showAllBtn.style.display = "none";
+        }
+      }
+      
+      // Trigger scroll event to ensure reveal observer fires for newly shown items
+      setTimeout(() => window.dispatchEvent(new Event('scroll')), 50);
+    };
 
     filterButtons.forEach((button) => {
       button.addEventListener("click", () => {
-        const filter = button.dataset.filter;
+        currentFilter = button.dataset.filter;
         filterButtons.forEach((item) => item.classList.remove("is-active"));
         button.classList.add("is-active");
-
-        projectCards.forEach((card) => {
-          const shouldShow =
-            filter === "all" || card.dataset.category === filter;
-          card.classList.toggle("is-hidden", !shouldShow);
-        });
+        isShowAll = false; // Reset to limit on filter change
+        applyFilters();
       });
     });
+
+    if (showAllBtn) {
+      showAllBtn.addEventListener("click", () => {
+        isShowAll = true;
+        applyFilters();
+      });
+    }
+
+    // Since renderProjects is called asynchronously, we need to defer applyFilters
+    // Actually, setupFilters is called AFTER renderProjects in initialize()
+    applyFilters();
   };
 
   const setupNavigation = () => {
