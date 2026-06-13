@@ -5,7 +5,6 @@
   const reducedMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)",
   ).matches;
-  const fallbackDataElement = document.getElementById("portfolio-data-fallback");
 
   const escapeHtml = (value) =>
     String(value)
@@ -135,13 +134,26 @@
                 <strong>${escapeHtml(project.visual.metric)}</strong>
                 <span>${escapeHtml(project.visual.metricLabel)}</span>
               </div>
-              <div class="project-device" aria-hidden="true">
+              ${project.category === 'web' ? `
+              <div class="project-device device-web" aria-hidden="true">
+                <div class="device-bar"><i></i><i></i><i></i></div>
+                <div class="device-content">
+                  <span></span>
+                  <div class="web-layout"><span></span><span></span></div>
+                </div>
+              </div>` : project.category === 'backend' ? `
+              <div class="project-device device-backend" aria-hidden="true">
+                <div class="server-unit"><i></i><i></i><span></span></div>
+                <div class="server-unit"><i></i><i></i><span></span></div>
+                <div class="server-unit"><i></i><i></i><span></span></div>
+              </div>` : `
+              <div class="project-device device-mobile" aria-hidden="true">
                 <div class="device-bar"><i></i><i></i><i></i></div>
                 <div class="device-content">
                   <span></span><span></span><span></span>
                   <div><i></i><i></i></div>
                 </div>
-              </div>
+              </div>`}
               <span class="project-arrow">${arrowIcon}</span>
             </a>
             <div class="project-meta">
@@ -348,18 +360,12 @@
     try {
       let data = null;
 
-      try {
-        const response = await fetch(DATA_URL);
-        if (response.ok) data = await response.json();
-      } catch (error) {
-        console.warn("Falling back to embedded portfolio data.", error);
+      const response = await fetch(DATA_URL);
+      if (response.ok) {
+        data = await response.json();
+      } else {
+        throw new Error(`Failed to fetch ${DATA_URL}: ${response.status}`);
       }
-
-      if (!data && fallbackDataElement?.textContent) {
-        data = JSON.parse(fallbackDataElement.textContent);
-      }
-
-      if (!data) throw new Error(`Unable to load ${DATA_URL}`);
 
       const experienceYears = renderProfile(data.profile);
       renderMetrics(data.metrics, experienceYears);

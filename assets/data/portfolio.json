@@ -1,11 +1,11 @@
 {
   "profile": {
     "name": "Tio Fani",
-    "role": "Android Software Engineer",
-    "location": "Purwokerto, Indonesia",
-    "careerStart": "2019-01-01",
+    "role": "Software Engineer",
+    "location": "Jakrata, Indonesia",
+    "careerStart": "2021-09-20",
     "email": "tiofani03@gmail.com",
-    "resume": "assets/pdf/cv_tio.pdf",
+    "resume": "https://drive.google.com/drive/folders/1UNQ5n786dvmP8DOGBrghBtPcffaplz1K",
     "github": "https://github.com/tiofani03",
     "linkedin": "https://linkedin.com/in/tiofani03",
     "whatsapp": "https://wa.me/6282137138344"
@@ -43,14 +43,198 @@
   ],
   "projects": [
     {
+      "title": "Alfagift",
+      "category": "android",
+      "type": "E-Commerce",
+      "description": "Android application for Alfamart retail.",
+      "url": "https://play.google.com/store/apps/details?id=com.alfamart.alfagift",
+      "tags": [
+        "Android",
+        "E-Commerce"
+      ],
+      "accent": "red",
+      "featured": true,
+      "visual": {
+        "eyebrow": "Retail App",
+        "headline": "Everyday needs delivered",
+        "metric": "Fast",
+        "metricLabel": "Delivery"
+      }
+    },
+    {
+      "title": "Livin Merchant",
+      "category": "android",
+      "type": "Fintech",
+      "description": "Application for Bank Mandiri merchants.",
+      "url": "https://play.google.com/store/apps/details?id=id.bmri.livinmerchant",
+      "tags": [
+        "Android",
+        "Fintech",
+        "Banking"
+      ],
+      "accent": "blue",
+      "visual": {
+        "eyebrow": "Merchant App",
+        "headline": "Empowering local businesses",
+        "metric": "Secure",
+        "metricLabel": "Transactions"
+      }
+    },
+    {
+      "title": "Moladin Agent",
+      "category": "android",
+      "type": "Automotive",
+      "description": "Application for Moladin agents to manage sales and operations.",
+      "url": "https://play.google.com/store/apps/details?id=com.moladin.moladinagent",
+      "tags": [
+        "Android",
+        "Automotive"
+      ],
+      "accent": "red",
+      "visual": {
+        "eyebrow": "Agent App",
+        "headline": "Empowering automotive agents",
+        "metric": "High",
+        "metricLabel": "Efficiency"
+      }
+    },
+    {
+      "title": "Lekasehat - Konsultasi Dokter",
+      "category": "android",
+      "type": "Health Tech",
+      "description": "Health consultation app for patients to connect with doctors.",
+      "url": "https://play.google.com/store/apps/details?id=com.lekasehat.user",
+      "tags": [
+        "Android",
+        "Health"
+      ],
+      "accent": "blue",
+      "visual": {
+        "eyebrow": "Health App",
+        "headline": "Online doctor consultation",
+        "metric": "24/7",
+        "metricLabel": "Availability"
+      }
+    },
+    {
+      "title": "Lekasehat Dokter",
+      "category": "android",
+      "type": "Health Tech",
+      "description": "Application for doctors to manage consultations and patients.",
+      "url": "https://play.google.com/store/apps/details?id=com.lekasehat.doctor",
+      "tags": [
+        "Android",
+        "Health"
+      ],
+      "accent": "lime",
+      "visual": {
+        "eyebrow": "Doctor Portal",
+        "headline": "Manage patient care seamlessly",
+        "metric": "Active",
+        "metricLabel": "Doctors"
+      }
+    },
+    {
+      "title": "Lekasehat Apotek",
+      "category": "android",
+      "type": "Health Tech",
+      "description": "Pharmacy management application connected to Lekasehat ecosystem.",
+      "url": "https://play.google.com/store/apps/details?id=com.lekasehat.pharmacy",
+      "tags": [
+        "Android",
+        "Health"
+      ],
+      "accent": "lime",
+      "visual": {
+        "eyebrow": "Pharmacy App",
+        "headline": "Streamlined prescription management",
+        "metric": "Fast",
+        "metricLabel": "Processing"
+      }
+    },
+    {
+      "title": "Moladin Internal",
+      "category": "android",
+      "type": "Automotive",
+      "description": "Internal operational application for Moladin.",
+      "url": "https://play.google.com/store/apps/details?id=com.moladin.mofi",
+      "tags": [
+        "Android",
+        "Internal"
+      ],
+      "accent": "ink",
+      "visual": {
+        "eyebrow": "Internal Tool",
+        "headline": "Streamlined internal operations",
+        "metric": "Secure",
+        "metricLabel": "Platform"
+      }
+    },
+    {
+      "title": "MOFI Internal",
+      "category": "android",
+      "type": "Automotive",
+      "description": "MOFI Internal operational application.",
+      "url": "https://play.google.com/store/apps/details?id=com.moladingroup.MOFIInternal",
+      "tags": [
+        "Android",
+        "Internal"
+      ],
+      "accent": "ink",
+      "visual": {
+        "eyebrow": "Internal Tool",
+        "headline": "Advanced operational management",
+        "metric": "Secure",
+        "metricLabel": "Platform"
+      }
+    },
+    {
+      "title": "MOFI Finance Dashboard",
+      "category": "web",
+      "type": "Automotive",
+      "description": "Web-based finance dashboard for MOFI operations.",
+      "url": "https://moladinfinance.com/",
+      "tags": [
+        "Web App",
+        "Internal"
+      ],
+      "accent": "sand",
+      "visual": {
+        "eyebrow": "Dashboard",
+        "headline": "Comprehensive financial overview",
+        "metric": "Data",
+        "metricLabel": "Driven"
+      }
+    },
+    {
+      "title": "AFA Calculator",
+      "category": "web",
+      "type": "Automotive",
+      "description": "Web application for calculating AFA metrics.",
+      "url": "https://moladin.com/",
+      "tags": [
+        "Web App",
+        "Internal"
+      ],
+      "accent": "sand",
+      "visual": {
+        "eyebrow": "Calculator Tool",
+        "headline": "Accurate automotive financing",
+        "metric": "Fast",
+        "metricLabel": "Calculations"
+      }
+    },
+    {
       "title": "Inovasi Desa",
       "category": "android",
       "type": "Public Service",
       "description": "Public innovation discovery and management platform.",
       "url": "https://play.google.com/store/apps/details?id=com.id.inovasidesa",
-      "tags": ["Android", "Public service", "Search"],
+      "tags": [
+        "Android",
+        "Public service"
+      ],
       "accent": "blue",
-      "featured": true,
       "visual": {
         "eyebrow": "Village Innovation",
         "headline": "Ideas that move communities forward",
@@ -64,7 +248,10 @@
       "type": "Food Tech",
       "description": "Recipe discovery with nearby food marketplace features.",
       "url": "https://github.com/Tiofani03/ResepKita",
-      "tags": ["Android", "Food tech"],
+      "tags": [
+        "Android",
+        "Food tech"
+      ],
       "accent": "orange",
       "visual": {
         "eyebrow": "Recipe Discovery",
@@ -79,7 +266,10 @@
       "type": "Community",
       "description": "A community-focused mobile information platform.",
       "url": "https://play.google.com/store/apps/details?id=com.id.sidoremi",
-      "tags": ["Android", "Community"],
+      "tags": [
+        "Android",
+        "Community"
+      ],
       "accent": "sand",
       "visual": {
         "eyebrow": "Local Platform",
@@ -89,18 +279,21 @@
       }
     },
     {
-      "title": "Vainglory App",
+      "title": "Bacaanku",
       "category": "android",
-      "type": "Gaming",
-      "description": "Game data companion connected to a custom backend service.",
-      "url": "https://github.com/tiofani03/vaingloryApp-Android",
-      "tags": ["Android", "Gaming", "REST API"],
-      "accent": "ink",
+      "type": "Personal Project",
+      "description": "Android application for reading management.",
+      "url": "https://github.com/Tiofani03/Bacaanku",
+      "tags": [
+        "Android",
+        "Utility"
+      ],
+      "accent": "blue",
       "visual": {
-        "eyebrow": "Game Companion",
-        "headline": "Player data without the noise",
-        "metric": "SEA",
-        "metricLabel": "Player region"
+        "eyebrow": "Reading App",
+        "headline": "Manage your readings",
+        "metric": "1.0",
+        "metricLabel": "Release"
       }
     },
     {
@@ -109,7 +302,10 @@
       "type": "Entertainment",
       "description": "Movie discovery and watchlist experience for Android.",
       "url": "https://github.com/Tiofani03/NontonYuk",
-      "tags": ["Android", "Entertainment"],
+      "tags": [
+        "Android",
+        "Entertainment"
+      ],
       "accent": "red",
       "visual": {
         "eyebrow": "Movie Discovery",
@@ -119,12 +315,70 @@
       }
     },
     {
+      "title": "Dolan",
+      "category": "android",
+      "type": "Personal Project",
+      "description": "Android app for Dolan.",
+      "url": "#",
+      "tags": [
+        "Android",
+        "Travel"
+      ],
+      "accent": "orange",
+      "visual": {
+        "eyebrow": "Travel App",
+        "headline": "Explore new places",
+        "metric": "1.0",
+        "metricLabel": "Release"
+      }
+    },
+    {
+      "title": "Dolanan",
+      "category": "ios",
+      "type": "Personal Project",
+      "description": "iOS application for Dolanan.",
+      "url": "https://github.com/Tiofani03/dolanan",
+      "tags": [
+        "IOS",
+        "Game"
+      ],
+      "accent": "red",
+      "visual": {
+        "eyebrow": "IOS App",
+        "headline": "Fun and games",
+        "metric": "1.0",
+        "metricLabel": "Release"
+      }
+    },
+    {
+      "title": "Vainglory App",
+      "category": "android",
+      "type": "Gaming",
+      "description": "Game data companion connected to a custom backend service.",
+      "url": "https://github.com/tiofani03/vaingloryApp-Android",
+      "tags": [
+        "Android",
+        "Gaming",
+        "REST API"
+      ],
+      "accent": "ink",
+      "visual": {
+        "eyebrow": "Game Companion",
+        "headline": "Player data without the noise",
+        "metric": "SEA",
+        "metricLabel": "Player region"
+      }
+    },
+    {
       "title": "Vainglory Backend",
       "category": "backend",
       "type": "REST API",
       "description": "Backend services powering player and match information.",
       "url": "https://github.com/tiofani03/vaingloryApp-Backend",
-      "tags": ["Backend", "REST API"],
+      "tags": [
+        "Backend",
+        "REST API"
+      ],
       "accent": "lime",
       "visual": {
         "eyebrow": "Backend Service",
@@ -132,33 +386,69 @@
         "metric": "200",
         "metricLabel": "Service ready"
       }
+    },
+    {
+      "title": "StoryApp",
+      "category": "android",
+      "type": "Dicoding Submission",
+      "description": "An Android application built as a submission for Dicoding's Intermediate Android Developer course, featuring photo sharing and location tracking.",
+      "url": "https://github.com/tiofani03/StoryApp",
+      "tags": [
+        "Android",
+        "Learning"
+      ],
+      "accent": "orange",
+      "visual": {
+        "eyebrow": "Learning Project",
+        "headline": "Share stories and locations",
+        "metric": "100",
+        "metricLabel": "Score"
+      }
+    },
+    {
+      "title": "PokeData",
+      "category": "android",
+      "type": "Personal Project",
+      "description": "A simple Pokedex application fetching data from the public Pokemon API.",
+      "url": "https://github.com/tiofani03/PokeData",
+      "tags": [
+        "Android",
+        "API Integration"
+      ],
+      "accent": "blue",
+      "visual": {
+        "eyebrow": "API Integration",
+        "headline": "Gotta catch all the data",
+        "metric": "151",
+        "metricLabel": "Pokemon"
+      }
     }
   ],
   "experience": [
     {
       "period": "2025 — Current",
       "role": "Android Application Developer",
-      "company": "PT Diksha Teknologi · Bank Mandiri placement",
-      "description": "Developed and enhanced core features for Livin' Merchant, improving application performance, product flow, and day-to-day reliability for business users."
+      "company": "PT Global Loyalty Indonesia · Alfagift",
+      "description": "Developing and enhancing core features for the Alfagift Android application, focusing on improving mobile shopping experiences, performance, and day-to-day reliability."
     },
     {
       "period": "2024 — 2025",
       "role": "Software Engineer · Android",
-      "company": "PT Diksha Teknologi · Bank Mandiri placement",
-      "description": "Developed and enhanced core features for Livin' Merchant, improving application performance, product flow, and day-to-day reliability for business users."
+      "company": "PT Diksha Teknologi · Bank Mandiri",
+      "description": "Responsible for the development and enhancement of the Livin' Merchant application. Designed, developed, and optimized core features to improve application performance and user experience."
     },
     {
       "period": "2022 — 2024",
-      "role": "Software Engineer || · Android",
+      "role": "Software Engineer · Android",
       "company": "PT Moladin Digital Indonesia",
-      "description": "Shipped referral, refinancing, onboarding, finance dashboard, calculator, and internal operational features across the Moladin product ecosystem."
+      "description": "Developed and maintained the Moladin Android ecosystem. Shipped MD Referral, Car Wishlist, Soundingan, Refinancing, Onboarding, Finance Dashboard, and AFA Calculator features."
     },
     {
       "period": "2021 — 2022",
       "role": "Android Developer",
       "company": "PT Lekasehat Indonesia",
-      "description": "Built and maintained patient, doctor, and pharmacy apps, including teleconsultation, referrals, vouchers, and prescription scanning."
-    }
+      "description": "Built and maintained patient, doctor, and pharmacy apps. Implemented teleconsultation for Covid & Malaria, referral programs, voucher systems, and prescription scanning."
+    },
   ],
   "principles": [
     {

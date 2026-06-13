@@ -653,8 +653,6 @@ svg {
   z-index: 2;
   right: 8%;
   top: 12%;
-  width: 36%;
-  height: 76%;
   padding: 18px;
   background: var(--paper);
   border: 2px solid var(--ink);
@@ -668,14 +666,21 @@ svg {
   transform: rotate(0) translateY(-4px);
 }
 
-.device-bar {
+/* Mobile */
+.device-mobile {
+  width: 36%;
+  height: 76%;
+}
+
+.device-mobile .device-bar,
+.device-web .device-bar {
   display: flex;
   gap: 5px;
   padding-bottom: 13px;
   border-bottom: 1px solid var(--line);
 }
 
-.device-bar i {
+.device-mobile .device-bar i {
   width: 6px;
   height: 6px;
   background: var(--ink);
@@ -683,41 +688,142 @@ svg {
   opacity: 0.5;
 }
 
-.device-content {
+.device-mobile .device-content {
   display: grid;
   gap: 11px;
   padding-top: 18px;
 }
 
-.device-content > span {
+.device-mobile .device-content > span {
   display: block;
   height: 9px;
   background: var(--paper-deep);
   border-radius: 999px;
 }
 
-.device-content > span:nth-child(1) {
+.device-mobile .device-content > span:nth-child(1) {
   width: 65%;
   height: 22px;
   background: var(--ink);
 }
 
-.device-content > span:nth-child(3) {
+.device-mobile .device-content > span:nth-child(3) {
   width: 78%;
 }
 
-.device-content > div {
+.device-mobile .device-content > div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 8px;
   margin-top: 8px;
 }
 
-.device-content > div i {
+.device-mobile .device-content > div i {
   aspect-ratio: 1;
   background: var(--acid);
   border: 1px solid var(--line);
   border-radius: 8px;
+}
+
+/* Web */
+.device-web {
+  width: 48%;
+  height: 48%;
+  right: -2%;
+  top: 32%;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.device-web .device-bar {
+  padding-bottom: 10px;
+}
+
+.device-web .device-bar i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.device-web .device-bar i:nth-child(1) { background: var(--red); }
+.device-web .device-bar i:nth-child(2) { background: var(--orange); }
+.device-web .device-bar i:nth-child(3) { background: var(--acid); }
+
+.device-web .device-content {
+  padding-top: 14px;
+}
+
+.device-web .device-content > span {
+  display: block;
+  width: 40%;
+  height: 12px;
+  background: var(--ink);
+  border-radius: 999px;
+}
+
+.device-web .web-layout {
+  display: flex;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.device-web .web-layout span {
+  height: 48px;
+  background: var(--paper-deep);
+  border-radius: 6px;
+}
+
+.device-web .web-layout span:first-child { flex: 1; }
+.device-web .web-layout span:last-child { flex: 2.5; background: var(--acid); border: 1px solid var(--line); }
+
+/* Backend */
+.device-backend {
+  width: 32%;
+  height: 68%;
+  right: 10%;
+  top: 16%;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.device-backend .server-unit {
+  flex: 1;
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 10px 12px 0 rgba(23, 23, 19, 0.16);
+}
+
+.device-backend .server-unit i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--ink);
+  opacity: 0.3;
+}
+
+.device-backend .server-unit i:nth-child(2) {
+  background: var(--acid);
+  opacity: 1;
+}
+
+.device-backend .server-unit span {
+  flex: 1;
+  height: 6px;
+  background: var(--paper-deep);
+  border-radius: 999px;
+  margin-left: auto;
+  max-width: 40%;
 }
 
 .project-blue {
