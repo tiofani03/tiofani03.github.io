@@ -1,0 +1,231 @@
+{
+  "profile": {
+    "name": "Tio Fani",
+    "role": "Android Software Engineer",
+    "location": "Purwokerto, Indonesia",
+    "careerStart": "2019-01-01",
+    "email": "tiofani03@gmail.com",
+    "resume": "assets/pdf/cv_tio.pdf",
+    "github": "https://github.com/tiofani03",
+    "linkedin": "https://linkedin.com/in/tiofani03",
+    "whatsapp": "https://wa.me/6282137138344"
+  },
+  "metrics": [
+    {
+      "value": "experience",
+      "suffix": "+",
+      "label": "Years engineering mobile products"
+    },
+    {
+      "value": "10",
+      "suffix": "+",
+      "label": "Products and features shipped"
+    },
+    {
+      "value": "03",
+      "suffix": "",
+      "label": "Industries at production scale"
+    }
+  ],
+  "technologies": [
+    "Kotlin",
+    "Jetpack Compose",
+    "Clean Architecture",
+    "Coroutines",
+    "Android SDK",
+    "MVVM",
+    "Kotlin Multiplatform",
+    "AI and Generative AI",
+    "Android SDK",
+    "WebRTC",
+    "MQTT",
+    "Websockets"
+  ],
+  "projects": [
+    {
+      "title": "Inovasi Desa",
+      "category": "android",
+      "type": "Public Service",
+      "description": "Public innovation discovery and management platform.",
+      "url": "https://play.google.com/store/apps/details?id=com.id.inovasidesa",
+      "tags": ["Android", "Public service", "Search"],
+      "accent": "blue",
+      "featured": true,
+      "visual": {
+        "eyebrow": "Village Innovation",
+        "headline": "Ideas that move communities forward",
+        "metric": "46",
+        "metricLabel": "Innovations"
+      }
+    },
+    {
+      "title": "Resepku",
+      "category": "android",
+      "type": "Food Tech",
+      "description": "Recipe discovery with nearby food marketplace features.",
+      "url": "https://github.com/Tiofani03/ResepKita",
+      "tags": ["Android", "Food tech"],
+      "accent": "orange",
+      "visual": {
+        "eyebrow": "Recipe Discovery",
+        "headline": "Cook something worth sharing",
+        "metric": "08",
+        "metricLabel": "Food categories"
+      }
+    },
+    {
+      "title": "Sidoremi",
+      "category": "android",
+      "type": "Community",
+      "description": "A community-focused mobile information platform.",
+      "url": "https://play.google.com/store/apps/details?id=com.id.sidoremi",
+      "tags": ["Android", "Community"],
+      "accent": "sand",
+      "visual": {
+        "eyebrow": "Local Platform",
+        "headline": "Community information, made accessible",
+        "metric": "24/7",
+        "metricLabel": "Local access"
+      }
+    },
+    {
+      "title": "Vainglory App",
+      "category": "android",
+      "type": "Gaming",
+      "description": "Game data companion connected to a custom backend service.",
+      "url": "https://github.com/tiofani03/vaingloryApp-Android",
+      "tags": ["Android", "Gaming", "REST API"],
+      "accent": "ink",
+      "visual": {
+        "eyebrow": "Game Companion",
+        "headline": "Player data without the noise",
+        "metric": "SEA",
+        "metricLabel": "Player region"
+      }
+    },
+    {
+      "title": "NontonYuk",
+      "category": "android",
+      "type": "Entertainment",
+      "description": "Movie discovery and watchlist experience for Android.",
+      "url": "https://github.com/Tiofani03/NontonYuk",
+      "tags": ["Android", "Entertainment"],
+      "accent": "red",
+      "visual": {
+        "eyebrow": "Movie Discovery",
+        "headline": "Find the next story to watch",
+        "metric": "∞",
+        "metricLabel": "Stories to explore"
+      }
+    },
+    {
+      "title": "Vainglory Backend",
+      "category": "backend",
+      "type": "REST API",
+      "description": "Backend services powering player and match information.",
+      "url": "https://github.com/tiofani03/vaingloryApp-Backend",
+      "tags": ["Backend", "REST API"],
+      "accent": "lime",
+      "visual": {
+        "eyebrow": "Backend Service",
+        "headline": "GET /players/:id",
+        "metric": "200",
+        "metricLabel": "Service ready"
+      }
+    }
+  ],
+  "experience": [
+    {
+      "period": "2025 — Current",
+      "role": "Android Application Developer",
+      "company": "PT Diksha Teknologi · Bank Mandiri placement",
+      "description": "Developed and enhanced core features for Livin' Merchant, improving application performance, product flow, and day-to-day reliability for business users."
+    },
+    {
+      "period": "2024 — 2025",
+      "role": "Software Engineer · Android",
+      "company": "PT Diksha Teknologi · Bank Mandiri placement",
+      "description": "Developed and enhanced core features for Livin' Merchant, improving application performance, product flow, and day-to-day reliability for business users."
+    },
+    {
+      "period": "2022 — 2024",
+      "role": "Software Engineer || · Android",
+      "company": "PT Moladin Digital Indonesia",
+      "description": "Shipped referral, refinancing, onboarding, finance dashboard, calculator, and internal operational features across the Moladin product ecosystem."
+    },
+    {
+      "period": "2021 — 2022",
+      "role": "Android Developer",
+      "company": "PT Lekasehat Indonesia",
+      "description": "Built and maintained patient, doctor, and pharmacy apps, including teleconsultation, referrals, vouchers, and prescription scanning."
+    }
+  ],
+  "principles": [
+    {
+      "title": "Architecture that lasts",
+      "description": "Clear module boundaries, pragmatic abstractions, and maintainable state flows that scale with a product.",
+      "icon": "architecture"
+    },
+    {
+      "title": "Interfaces with empathy",
+      "description": "Thoughtful loading, error, and empty states that keep the experience understandable under real-world conditions.",
+      "icon": "empathy"
+    },
+    {
+      "title": "Performance by default",
+      "description": "Responsive rendering, efficient data access, and focused measurement before optimization decisions.",
+      "icon": "performance"
+    },
+    {
+      "title": "Collaborative delivery",
+      "description": "Direct communication with design, product, backend, and QA to turn ambiguity into a shared release plan.",
+      "icon": "collaboration"
+    }
+  ],
+  "toolkit": [
+    "Kotlin",
+    "Java",
+    "Android Jetpack",
+    "Compose",
+    "Coroutines",
+    "Retrofit",
+    "Koin",
+    "Hilt",
+    "Firebase",
+    "SQLite",
+    "Git",
+    "CI/CD"
+  ],
+  "certificates": [
+    {
+      "title": "Menjadi Android Developer Expert",
+      "issuer": "Dicoding Indonesia",
+      "year": "2022",
+      "url": "https://www.dicoding.com/certificates/53XEW5LJKXRN"
+    },
+    {
+      "title": "Belajar Pengembangan Aplikasi Android Intermediate",
+      "issuer": "Dicoding Indonesia",
+      "year": "2022",
+      "url": "https://www.dicoding.com/certificates/07Z6RJWYMPQR"
+    },
+    {
+      "title": "Memulai Pemrograman dengan Kotlin",
+      "issuer": "Dicoding Indonesia",
+      "year": "2021",
+      "url": "https://www.dicoding.com/certificates/ERZR5WWVQPYV"
+    },
+    {
+      "title": "SOLID Programming Principle",
+      "issuer": "Dicoding Indonesia",
+      "year": "2021",
+      "url": "https://www.dicoding.com/certificates/07Z6543QWXQR"
+    },
+    {
+      "title": "Belajar Membuat Aplikasi Flutter untuk Pemula",
+      "issuer": "Dicoding Indonesia",
+      "year": "2021",
+      "url": "https://www.dicoding.com/certificates/MRZMKYNVKPYQ"
+    }
+  ]
+}
