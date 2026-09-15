@@ -1718,3 +1718,26 @@ svg {
     transform: none;
   }
 }
+
+/* Legal links in the contact footer */
+.contact-footer .legal-row {
+  display: flex;
+  gap: 18px;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(23, 23, 19, 0.14);
+}
+.contact-footer .legal-row a {
+  font-family: var(--mono, "DM Mono", monospace);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+.contact-footer .legal-row a:hover {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+}
