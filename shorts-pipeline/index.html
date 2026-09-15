@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Shorts Pipeline — a self-hosted tool that turns long YouTube videos into vertical short clips."/>
+    <meta name="theme-color" content="#f2efe8"/>
+    <title>Shorts Pipeline</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&family=Syne:wght@500;600;700&display=swap" rel="stylesheet"/>
+    <style>
+        :root { --paper:#f2efe8; --paper-deep:#e5e0d5; --ink:#171713; --ink-soft:#55554d; --line:rgba(23,23,19,.14) }
+        * { box-sizing:border-box }
+        body { margin:0; background:var(--paper); color:var(--ink); font-family:Manrope,system-ui,sans-serif; line-height:1.65 }
+        .wrap { max-width:820px; margin:0 auto; padding:56px 24px 96px }
+        header.site { display:flex; align-items:center; gap:14px; margin-bottom:56px }
+        .mark { width:44px; height:44px; border-radius:50%; background:var(--ink); color:var(--paper); display:grid; place-items:center; font-family:Syne,sans-serif; font-weight:700; letter-spacing:-1px }
+        header.site strong { font-family:Syne,sans-serif; font-size:18px }
+        header.site a.home { margin-left:auto; font-size:13px; color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line) }
+        .kicker { font-family:"DM Mono",monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:14px }
+        h1 { font-family:Syne,sans-serif; font-size:clamp(34px,6vw,52px); line-height:1.05; margin:0 0 18px; letter-spacing:-.02em }
+        .lede { font-size:17px; color:#2c2c26; max-width:620px; margin:0 0 36px }
+        h2 { font-family:Syne,sans-serif; font-size:18px; margin:38px 0 10px; padding-top:22px; border-top:1px solid var(--line) }
+        p, li { font-size:15px; color:#2c2c26 }
+        ul { padding-left:20px }
+        li { margin-bottom:6px }
+        a { color:var(--ink) }
+        code { font-family:"DM Mono",monospace; font-size:12.5px; background:var(--paper-deep); padding:2px 6px; border-radius:4px }
+        .note { margin-top:36px; padding:18px 20px; border:1px solid var(--line); border-radius:10px; background:rgba(229,224,213,.5); font-size:14px; color:var(--ink-soft) }
+        footer.page { margin-top:56px; padding-top:22px; border-top:1px solid var(--line); font-size:13px; color:var(--ink-soft) }
+        footer.page a { color:var(--ink-soft) }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <header class="site">
+        <span class="mark">SP</span>
+        <strong>Shorts Pipeline</strong>
+        <a class="home" href="https://tiofani03.github.io/">Tio Fani</a>
+    </header>
+
+    <div class="kicker">Self-hosted · single operator</div>
+    <h1>Shorts Pipeline</h1>
+    <p class="lede">
+        Shorts Pipeline is a personal tool that turns a long YouTube video into vertical
+        9:16 short clips: it transcribes the source, ranks the strongest moments, renders
+        them with captions, and can upload the finished clips to the operator's own
+        YouTube channel.
+    </p>
+
+    <h2>What it does</h2>
+    <ul>
+        <li>Downloads a source video the operator supplies and transcribes the speech.</li>
+        <li>Ranks the most clip-worthy moments and cuts them to 9:16 portrait format.</li>
+        <li>Burns in word-timed captions and an optional hook overlay.</li>
+        <li>Uploads the finished clip to the operator's own YouTube channel, at the privacy setting the operator chooses.</li>
+    </ul>
+
+    <h2>Why it asks for Google access</h2>
+    <p>
+        The tool connects to YouTube through Google OAuth 2.0 so it can upload clips
+        directly to the operator's channel and display which channel is currently linked.
+        It requests only:
+    </p>
+    <ul>
+        <li><code>youtube.upload</code> — to publish a finished clip.</li>
+        <li><code>youtube.readonly</code> — to read basic channel identity (name, handle, avatar).</li>
+    </ul>
+    <p>
+        It does not access Gmail, Drive, Calendar, Contacts, or any other Google service,
+        and it does not read private videos, comments, subscribers, or analytics.
+    </p>
+
+    <h2>Who can use it</h2>
+    <p>
+        Shorts Pipeline is not a public service. There is no sign-up, it is not distributed
+        as a product, and it is operated solely by its author on his own private server for
+        his own single Google account.
+    </p>
+
+    <div class="note">
+        Operated by Tio Fani. YouTube is a trademark of Google LLC. Shorts Pipeline is not
+        affiliated with, endorsed by, or sponsored by YouTube or Google.
+    </div>
+
+    <footer class="page">
+        <a href="https://tiofani03.github.io/">Home</a> ·
+        <a href="https://tiofani03.github.io/privacy/">Privacy Policy</a> ·
+        <a href="https://tiofani03.github.io/terms/">Terms of Service</a> ·
+        <a href="mailto:tiofani03@gmail.com">tiofani03@gmail.com</a>
+    </footer>
+</div>
+</body>
+</html>
